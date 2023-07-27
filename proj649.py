@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-pip3 install scikit-learn
+pip install -U scikit-learn
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
