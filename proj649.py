@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+sudo pip install scikit-learn
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
