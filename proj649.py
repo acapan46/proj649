@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+import sklearn
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -12,14 +13,22 @@ from sklearn.preprocessing import StandardScaler
 from PIL import Image
 
 st.title("Group Project CSC649")
-st.header("SALARY PREDICTION")
+st.title("Salary Prediction")
+st.write(" ")
+st.write(" ")
 st.subheader("UiTM TAPAH")
 st.subheader("A4CS2305A")
+st.write(" ")
+st.write(" ")
 st.write("MUHAMMAD IKMAL BIN ISMAIL           (2022912399)")
 st.write("MUHAMMAD ASHRAF BIN AZAHARI         (2022995637)")
 st.write("MUHAMMAD ARIF ZIKRI BIN MOHD AFIZI  (2022978157)")
 st.write("NURUL NAJIHAH BINTI DZULKIFLI       (2022949525)")
-
+st.write(" ")
+st.write(" ")
+st.subheader("This system predicts salary classes or ranges using various inputs such as age, location, job title. The algorithms used in this system is Support Vector Machine (SVM), K-Nearest Neighbor(KNN) and Random Forest. The datasets used for the system are from general working adults, web developers, data science industries and white house staff. The performance of the model is measured using the accuracy score.")
+image = Image.open('Home.jpg')
+st.image(image, caption='Essential Workers')
 results_dict = {}
 
 def evaluate_model(predictions, model_name):
