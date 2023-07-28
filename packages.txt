@@ -1,1 +1,1 @@
-pip3 install scikit-learn
+pip install scikit-learn
