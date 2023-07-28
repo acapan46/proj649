@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-pip install -r requirements.txt
 import sklearn
 import pandas as pd
 from sklearn.model_selection import train_test_split
